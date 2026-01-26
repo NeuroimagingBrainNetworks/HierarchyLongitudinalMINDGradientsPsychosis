@@ -6,15 +6,12 @@ This repository contains code and data created in support of the project García
 ## **Data**
 
 The `Data` folder contains all the data required for running the analyses. Here are the files that need to be downloaded and stored in a specific location. The remaining files will be automatically generated:
-
-- `volumes` folder contains the regional volume and velocity peaks in `Table_2_2.csv` obtained from https://doi.org/10.1038/s41586-022-04554-y. 
   
 -	The code used to compute MIND networks is available at https://github.com/isebenius/MIND and corresponds to [MIND_long_01_MIND.py](Code/MIND_long_01_MIND.py).
 
 - The `sensorimotor-association_axis_ranking_DK.csv` file was derived from https://doi.org/10.1016/j.neuron.2021.06.016.
 
 -	The `all_microsc_DesikanKilliany68.csv` file is available at https://github.com/netneurolab/netneurotools.
-
 
 
 ## **Code**
@@ -43,17 +40,6 @@ gm_ref = GradientMaps('approach', 'dm', 'kernel', 'normalized_angle');
 -	[MIND_long_08_cortical_MIND_association_maps.m](Code/MIND_long_08_cortical_MIND_association_maps.m) – generates the regional brain maps of cortical MIND associations.
 
 -	[MIND_long_09_subcortical_MIND_association_maps.m](Code/MIND_long_09_subcortical_MIND_association_maps.m) – generates the regional brain maps of subcortical MIND associations.
-
-  
-### **Function calls**
-
-This section contains the functions that are essential for running the scripts but must not be executed.
-
--	[mix_dx.m](Code/mix_dx.m) – creates randomized groups by mixing patients with different diagnoses or group membership. It is called by [MIND_02_degree_and_edges_PAFIP.m](Code/MIND_02_degree_and_edges_PAFIP.m) and [MIND_05_maturational_features.m](Code/MIND_05_maturational_features.m).
-
--	[regional_brainmap_representation.R](Code/regional_brainmap_representation.R) - generates regional brain maps from .csv files.
-
--	[regional_brainmap_representation_borders.R](Code/regional_brainmap_representation_borders.R) - generates from .csv files regional brain maps highlighting the significant regions.
 
 
 ## **License**
