@@ -6,7 +6,8 @@
 # 
 #  Written by Natalia García San Martín (ngarcia1@us.es)
 # 
-# 
+# This file is part of Hierarchy Longitudinal Gradients Psychosis toolkit.
+#
 #  Hierarchy Longitudinal Gradients Psychosis toolkit is free software: 
 #  you can redistribute it and/or modify it under the terms of the 
 #  GNU General Public License as published by the Free Software Foundation, 
@@ -227,6 +228,7 @@ for (type in types){
   }
   
 }
+
 
 
 
