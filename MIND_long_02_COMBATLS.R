@@ -7,18 +7,18 @@
 #  Written by Natalia García San Martín (ngarcia1@us.es)
 # 
 # 
-#  Hierarchy MIND Psychosis toolkit is free software: 
+#  Hierarchy Longitudinal Gradients Psychosis toolkit is free software: 
 #  you can redistribute it and/or modify it under the terms of the 
 #  GNU General Public License as published by the Free Software Foundation, 
 #  either version 3 of the License, or (at your option) any later version.
 # 
-#  Hierarchy MIND Psychosis toolkit is distributed in the hope that 
+#  Hierarchy Longitudinal Gradients Psychosis toolkit is distributed in the hope that 
 #  it will be useful, but WITHOUT ANY WARRANTY; without even the implied 
 #  warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 #  GNU General Public License for more details.
 # 
 #  You should have received a copy of the GNU General Public License
-#  along with Hierarchy MIND Psychosis toolkit. If not, see 
+#  along with Hierarchy Longitudinal Gradients Psychosis toolkit. If not, see 
 #  <https://www.gnu.org/licenses/>.
 
 rm(list=ls()) # Previous data cleaning in memory
@@ -227,6 +227,7 @@ for (type in types){
   }
   
 }
+
 
 
 
