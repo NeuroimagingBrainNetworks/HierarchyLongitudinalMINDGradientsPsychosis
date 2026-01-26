@@ -38,22 +38,16 @@ gm_ref = GradientMaps('approach', 'dm', 'kernel', 'normalized_angle');
 
 - [MIND_long_06_longitudinal_BPRS_MIND.m](Code/MIND_long_05_longitudinal_BPRS_MIND.m)
 
--	[MIND_long_07_hierarchy_SCZ_brain_maps.m](Code/MIND_long_07_hierarchy_SCZ_brain_maps.m) – generates the brain maps of cortical hierarchy and SCZ epicenters, and their correlation with MIND associations.
+-	[MIND_long_07_hierarchy_SCZ_brain_maps.m](Code/MIND_long_07_hierarchy_SCZ_brain_maps.m) – generates the brain maps of cortical hierarchy and SCZ epicenters, and their correlation (co-localization) with MIND associations.
 
 -	[MIND_long_08_cortical_MIND_association_maps.m](Code/MIND_long_08_cortical_MIND_association_maps.m) – generates the regional brain maps of cortical MIND associations.
 
 -	[MIND_long_09_subcortical_MIND_association_maps.m](Code/MIND_long_09_subcortical_MIND_association_maps.m) – generates the regional brain maps of subcortical MIND associations.
 
-
-
-
--	[MIND_11_neurobiology.m](Code/MIND_11_neurobiology.m) – computes the associations between MIND and neurobiological features.
   
 ### **Function calls**
 
 This section contains the functions that are essential for running the scripts but must not be executed.
-
--	[computeCohen_d.m](Code/computeCohen_d.m) – computes the Cohen’s distance between two vectors. It is called by [MIND_02_degree_and_edges_PAFIP.m](Code/MIND_02_degree_and_edges_PAFIP.m) and [MIND_05_maturational_features.m](Code/MIND_05_maturational_features.m) scripts.
 
 -	[mix_dx.m](Code/mix_dx.m) – creates randomized groups by mixing patients with different diagnoses or group membership. It is called by [MIND_02_degree_and_edges_PAFIP.m](Code/MIND_02_degree_and_edges_PAFIP.m) and [MIND_05_maturational_features.m](Code/MIND_05_maturational_features.m).
 
@@ -72,4 +66,4 @@ If you use this software, please cite the following paper and software:
 
 - García-San-Martín, N., Bethlehem, R.A., Sebenius, I. et al. Long-term morphometric similarity gradients relate to cortical hierarchy and psychiatric symptoms in schizophrenia. medRxiv (2026). https://doi.org/
   
-- Natalia-García-San-Martín. NeuroimagingBrainNetworks/HierarchyMINDPsychosis: v1.0.0-alpha. Zenodo https://doi.org/ (2026).
+- Natalia-García-San-Martín. NeuroimagingBrainNetworks/HierarchyLongitudinalGradientsPsychosis: v1.0.0-alpha. Zenodo https://doi.org/ (2026).
