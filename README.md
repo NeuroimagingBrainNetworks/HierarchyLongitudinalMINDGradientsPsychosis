@@ -29,6 +29,11 @@ The `Code` folder contains all the code required for running the analyses and ge
     
 -	[MIND_long_04_gradients.m](Code/MIND_long_04_gradients.m) – calculates the MIND gradients for each HC and SSD individual, and generates brain maps of cortical and subcrotical degrees, as well as cortical gradients.
 
+```matlab
+gm_ref = GradientMaps('approach', 'dm', 'kernel', 'normalized_angle');
+
+```
+
 - [MIND_long_05_longitudinal_dx_MIND.m](Code/MIND_long_05_longitudinal_dx_MIND.m)
 
 - [MIND_long_06_longitudinal_BPRS_MIND.m](Code/MIND_long_05_longitudinal_BPRS_MIND.m)
@@ -40,50 +45,7 @@ The `Code` folder contains all the code required for running the analyses and ge
 -	[MIND_long_09_subcortical_MIND_association_maps.m](Code/MIND_long_09_subcortical_MIND_association_maps.m) – generates the regional brain maps of subcortical MIND associations.
 
 
-```matlab
-% Machine settings
 
- cfg.machine.name = 'cca';
- 
- cfg.machine.metric = {'correl' 'trexvarx' 'trexvary'}; 
- 
- cfg.machine.param.name = {'VARx', 'VARy'}; % explained variance by the PCA components
-
- cfg.machine.param.VARx = 0.6:0.1:0.9; % variance of data kept in the principal components during the SVD step of PCA-CCA  
- 
- cfg.machine.param.VARy = 1;   
- 
- cfg.machine.svd.varx = 1; % variance of X kept during the SVD step of PCA-CCA 
-
- cfg.machine.svd.vary = 1; % variance of Y kept during the SVD step of PCA-CCA
-
- cfg.machine.alignw = 'wX';
-
-% Framework settings
-
-cfg.frwork.name = 'permutation';     
- 
- cfg.frwork.split.nout % number of outer splits/folds
- 
- cfg.frwork.nlevel = 1;
-    
-% Deflation settings
-
- cfg.defl.name = 'generalized'; 
-    
-% Environment settings
-
- cfg.env.comp = 'local'; %  ['local', 'cluster']
-
- cfg.env.save.tableHeading = {'set' 'varx' 'correl' 'pval' 'npcax'};
-    
-% Number of permutations
-
- cfg.stat.nperm = 1000;
-
- cfg.stat.nboot = 1000;
-
-```
 
 -	[MIND_11_neurobiology.m](Code/MIND_11_neurobiology.m) – computes the associations between MIND and neurobiological features.
   
